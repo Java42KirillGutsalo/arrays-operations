@@ -70,6 +70,7 @@ class ArraysOperationsTests {
 		assertArrayEquals(expectedNum, actualNum);
 		actualNum = new Integer[numbers.length];
 		assertEquals(WRONG_RESULT_LENGTH, insertSorted(numbers, num, actualNum));
+		// V.R. Test for String isn't implemented
 	}
 
 	@Test
@@ -82,6 +83,8 @@ class ArraysOperationsTests {
 		assertArrayEquals(expected, actualNumbers);
 		actualNumbers = new Integer[1];
 		assertEquals(WRONG_RESULT_LENGTH, addLast(numbers, elementAddLast, actualNumbers));
+		// V.R. Return code Ok isn't tested
+		// V.R. Test for String isn't implemented
 	}
 
 	@Test
@@ -94,6 +97,8 @@ class ArraysOperationsTests {
 		assertArrayEquals(expected, actualNumbers);
 		actualNumbers = new Integer[1];
 		assertEquals(WRONG_RESULT_LENGTH, addFirst(numbers, elementAddFirst, actualNumbers));
+		// V.R. Return code Ok isn't tested
+		// V.R. Test for String isn't implemented
 	}
 
 }

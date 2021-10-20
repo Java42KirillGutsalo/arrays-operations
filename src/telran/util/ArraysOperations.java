@@ -27,6 +27,8 @@ public static  <T> String insert(T[] array, T element, int index, T[] res) {
 }
 public static <T> String remove(T[] array, int index, T[] res) {
 	//TODO removes any object at the given index
+	// V.R. The maximum value of index can be array.length-1.
+	// So index cannot be greater than (array.length-1).
 	if (index < 0 || index > array.length) {
 		return WRONG_INDEX;
 	}
