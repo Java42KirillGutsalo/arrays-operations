@@ -27,6 +27,7 @@ public static  <T> String insert(T[] array, T element, int index, T[] res) {
 }
 public static <T> String remove(T[] array, int index, T[] res) {
 	//TODO removes any object at the given index
+	//[YG] major bug see the relevant test
 	if (index < 0 || index > array.length) {
 		return WRONG_INDEX;
 	}

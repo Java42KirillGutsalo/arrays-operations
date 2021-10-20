@@ -45,6 +45,7 @@ class ArraysOperationsTests {
 		int indexRemove = 1;
 		assertEquals(OK,remove(arStr, indexRemove, actualStr));
 		assertArrayEquals(expectedStr, actualStr);
+		//[YG] put 3 instead of 100 as 3 should be wrong index as well as 100
 		assertEquals(WRONG_INDEX,remove(arStr, 100, actualStr));
 		actualStr = new String[1];
 		assertEquals(WRONG_RESULT_LENGTH,remove(arStr, indexRemove, actualStr));
